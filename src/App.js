@@ -1,37 +1,30 @@
 import React, { Component } from 'react';
-import Background from './bg.png';
-import Foto from './bali.png';
-import Button from './Button';
-import Button2 from './Button2';
+import Background from './bgmoss.png';
+import Button3 from './Button3';
 
 class App extends Component {
   render(){
     return(
       <div style={styles.Background}>
-        <div style={styles.overlay}>
           <div style={styles.container}>
-            <img src={Foto} alt="" style={{height: 168, width: 150}} />
             <div style={styles.h1}>
-              A Better way to 
-              <div style={styles.h2}>
-                travel to Bali
-                </div>
+              Make it green
+            </div>
+            <div className = 'text'>
+              GO GREEN
+            </div>
             </div>
             <div style={styles.subTittle}>
-              Cheapest and Easyer
+              Now more than ever. Our planet is need our
             </div>
             <div style={styles.wrapperInput}>
-              <Button2 title="Read More"/>
-              <Button title="Reservation"/>
+              <Button3 title="Do it Now"/>
               </div>
             </div>
-          </div>
-        </div>
     );
   }
 }
 let w = window.innerWidth;
-let h = window.innerHeight;
 const styles ={
   Background:{
     display: 'flex',
@@ -45,39 +38,70 @@ const styles ={
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover'
   },
-  overlay: {
-    backgroundColor: "rgba(81,77,67,0.7)",
-    width: '100%',
-    height: h
-  },
   container:{
     display:'flex',
     flexDirection:'column',
     alignItems: 'center',
-    fontFamily: 'Pacifico'
+    fontFamily: 'Poppins'
   },
   h1: {
-    alignSelf: 'center',
-    marginTop: 50,
-    color: 'white',
-    fontSize: 48,
-    textAlign: 'center',
-    maxWidht: 700
+    position: "absolute",
+    width: '338px',
+    height: '72px',
+    left: '471px',
+    top: '253px',
+    fontFamily: 'Poppins',
+    color: '#FFFFFF',
+    fontStyle: 'normal',
+    fontWeight: 800,
+    fontSize: '48px',
+    lineHeight: '72px'
   },
-  h2: {
-    color: 'orange',
-    textAlign: 'center',
-    maxWidht: 700
-  },
+ text: {
+  position: "absolute",
+  height: '36px',
+  left: '73px',
+  top: '51px',
+  fontFamily: 'Poppins',
+  fontStyle: 'normal',
+  fontWeight: 'normal',
+  fontSize: '24px',
+  lineHeight: '36px',
+  textAlign: '35px'
+ },
   wrapperInput: {
     display: 'flex',
     alignSelf: 'center',
-    marginTop: 60
+    marginTop: '600px',
+    alignItems: 'center',
+    color: '#FFFFFF',
+    borderRadius: '5px',
+    textAlign: 'center',
+    padding : '100px',
+    textDecoration: 'none',
+    width: '400px',
+    height: '360px',
+    left: '582px',
+    top: '421px',
+    paddingTop: '100px',
+    fontStyle: 'normal',
+    fontWeight: '600',
+    fontSize: '24px',
+    lineHeight: '50px'
   },
   subTittle: {
-    color: 'white',
-    fontFamily: "Roboto",
-    marginTop: 20
+    position: "absolute",
+    width: '520px',
+    height: '36px',
+    left: '380px',
+    top: '325px',
+    fontFamily: 'Poppins',
+    fontStyle: 'normal',
+    fontWeight: 'normal',
+    fontSize: '24px',
+    lineHeight: '36px',
+    textAlign: 'center',
+    color: '#FFFFFF',
   },
 }
 

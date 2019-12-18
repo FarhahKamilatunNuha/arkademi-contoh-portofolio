@@ -10,10 +10,15 @@ class App extends Component {
             <div style={styles.h1}>
               Make it green
             </div>
-            <div className = 'text'>
-              GO GREEN
+            <div style= { styles.gogreen }>
+              GO GREEN 
             </div>
             </div>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g className="calendar">
+            <path className="icon/action/calendar" fill-rule="evenodd" clip-rule="evenodd" d="M42 11H6V15H42V11ZM42 19H6V29H42V19ZM38 25V23H10V25H38ZM42 33H6V37H42V33Z" fill="#E67E22"/>
+            </g>
+            </svg>
             <div style={styles.subTittle}>
               Now more than ever. Our planet is need our
             </div>
@@ -57,17 +62,26 @@ const styles ={
     fontSize: '48px',
     lineHeight: '72px'
   },
- text: {
+ gogreen: {
   position: "absolute",
-  height: '36px',
   left: '73px',
-  top: '51px',
+  top: '57px',
+
   fontFamily: 'Poppins',
   fontStyle: 'normal',
   fontWeight: 'normal',
   fontSize: '24px',
   lineHeight: '36px',
-  textAlign: '35px'
+
+  textAlign: 'center',
+  color: '#FFFFFF'
+ },
+ calendar:{
+  position: "absolute",
+  left: '12.5%',
+  top: '39.92%',
+  right: '120.50',
+  bottom: '39.92%',
  },
   wrapperInput: {
     display: 'flex',
